@@ -1,0 +1,389 @@
+$base_color: #3A5F56;
+$second_color: #292C32;
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.conteiner{
+    max-width: 1170px;
+    margin: 0 auto;
+
+}
+
+.btn{
+    color: #fff;
+    background-color: $base_color;
+    border-radius: 6px;
+    padding: 10px 18px;
+    
+}
+
+.header{    
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 0;
+    
+    }
+    
+    &__box{
+        display: flex;
+        align-items: center;
+    }
+    &__menu{
+    display: flex;
+    gap: 8px;
+    }
+    &__link{
+        font-size: 16px;
+        color: $base_color;
+
+        &:hover{
+            color:crimson;
+        }
+    }
+    &__item{
+        margin-right: 30px;
+    }
+    &__cart{
+        display: flex;
+        gap: 8px;
+        &::before{
+            content:'';
+            background: url(../img/cart.svg);
+            display: block;
+            width: 17px;
+            height: 17px;
+        }
+        &::after{
+            content: '0';
+            color: $base_color;
+            background-color: #fff;
+            padding: 0 6px;
+            border-radius: 50%;
+        }
+    }
+}
+.main{
+    background: url(../img/bgmain.png) no-repeat center center / cover;
+    padding: 100px 0;
+    &__wrap{
+        display: flex;
+        gap: 64px;
+        align-items: center;
+    }
+    &__title{
+        color: $base_color;
+        font-size: 48px;
+        margin-bottom: 15px;
+    }
+    &__text{
+        color: $base_color;
+        font-size: 16px;
+        margin-bottom: 27px;  
+    }
+}
+
+.services{
+    padding: 100px;
+
+    &__info{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__info-title{
+        color: $base_color;
+        padding: 15px;
+        font-weight: 400;
+        font-size: 32px;
+    }
+
+    &__info-text{
+        max-width: 592px;
+        text-align: center;
+    }
+
+    &__row{
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    &__row-1{
+        padding: 50px;
+        background-color: #F4F3F0;
+        border-radius: 16px;
+    }
+    &__row-1-title{
+        color: $base_color;
+        font-size: 24px;
+        font-weight: 400;
+        margin-top: 9px;
+        margin-bottom: 6px;
+    }
+
+    &__row-1-text{
+        width: 310px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &__read{
+        display: flex;
+    }
+
+    &__read-more{
+        color: $base_color;
+        font-size: 17px;
+        font-weight: 400;
+        padding-right: 5px;
+    }
+
+    &__row-2{
+        padding: 50px;
+        background-color: #F4F3F0;
+        border-radius: 16px;
+        margin-left: 16px;
+    }
+    &__row-2-title{
+        color: $base_color;
+        font-size: 24px;
+        font-weight: 400;
+        margin-top: 9px;
+        margin-bottom: 6px;
+    }
+
+    &__row-2-text{
+        width: 310px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    &__row-3{
+        padding: 50px;
+        background-color: #F4F3F0;
+        border-radius: 16px;
+        margin-left: 16px;
+    }
+    &__row-3-title{
+        color: $base_color;
+        font-size: 24px;
+        font-weight: 400;
+        margin-top: 9px;
+        margin-bottom: 6px;
+    }
+
+    &__row-3-text{
+        width: 310px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    &__row__second{
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+    }
+    
+    &__row__third{
+        display: flex;
+        margin-top: 16px;
+        margin-left: 220px;
+    }
+}
+
+.store{
+    background: url("../img/bgstore.png");
+    padding: 100px;
+
+    &__info{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    &__info-title{
+        color: #DB343B;
+        padding: 15px;
+        font-weight: 400;
+        font-size: 32px;
+    }
+
+    &__info-text{
+        max-width: 592px;
+        text-align: center;
+    }
+
+    &__row{
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+    }
+
+    &__card{
+        max-width: 379px;
+        margin-left: 16px;
+    }
+
+    &__bott{
+        margin-top: -6px;
+        background-color: #fff;
+        border-radius: 7px;
+        padding: 30px 30px 30px 30px;
+    }
+
+    &__title{
+        color: $base_color;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    &__text{
+        color: $base_color;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 6px;
+    }
+
+
+    &__next{
+        display: flex;
+        justify-content: center;
+    }
+    &__next-title{
+        color: $base_color;
+        font-size: 17px;
+        font-weight: 400;
+        margin-right: 5px;
+    }
+}
+
+.contact{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    
+
+    &__box{
+        display: flex;
+        align-items: center;
+        background-color: #F4F3F0;
+        padding: 80px 407px 80px 80px;
+        border-radius: 16px;
+        width: 800px;
+        height: 259px;
+    }
+
+    &__text{
+        color: #292C32;
+        font-size: 28px;
+        font-weight: 400;
+    }
+}
+
+.mirro{
+    background-color: #292C32;
+    padding: 100px;
+
+    &__title{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__wrow{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__row{
+        display: flex;
+        flex-direction: column;
+        padding: 75px;
+    }
+
+    &__row-2{
+        display: flex;
+        flex-direction: column;
+        padding: 75px;
+    }
+
+    &__row-3{
+        display: flex;
+        flex-direction: column;
+        padding: 75px;
+    }
+    &__row-4{
+        display: flex;
+        flex-direction: column;
+        padding: 75px;
+    }
+
+    &__pages{
+        text-transform: uppercase;
+        color: #B87D58;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    &__small-text{
+        color: #fff;
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        
+    }
+    
+
+    &__pages-2{
+        text-transform: uppercase;
+        color: #B87D58;
+        margin-top: 32px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    &__email{
+        margin-top: 8px;
+        width: 458px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    
+    &__bottom{
+        margin-left: 100px;
+    }
+
+    &__text-bot{
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &__logo{
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+
+}
